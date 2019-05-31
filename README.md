@@ -105,7 +105,7 @@ const fred = new Instructor({
 * ProjectManagers are extensions of Instructors
 * ProjectManagers have the following unique props:
   * `gradClassName`: i.e. CS1
-  * `favInstructor`: i.e. Sean
+  * `favInstructor`:i.e. Sean
 * ProjectManagers have the following Methods:
   * `standUp` a method that takes in a slack channel and logs `{name} announces to {channel}, @channel standy times!​​​​​
   * `debugsCode` a method that takes in a student object and a subject and logs out `{name} debugs {student.name}'s code on {subject}`
@@ -117,3 +117,43 @@ const fred = new Instructor({
 * Add a graduate method to a student.
   * This method, when called, will check the grade of the student and see if they're ready to graduate from Lambda School
   * If the student's grade is above a 70% let them graduate! Otherwise go back to grading their assignments to increase their score.
+
+
+<!-- 
+name
+age
+location
+
+Instructor
+specialty
+favLanguage
+catchPhrase
+
+grade(student, subject)
+demo(subject)
+
+
+Student
+previousBackground
+className
+favSubjects
+
+sprintChallenge(subject)
+PRAssignment(subject)
+listSubjects()
+
+
+PM
+gradClassName
+favInstructor
+
+ debugsCode(student, subject)
+standUp(channel)
+
+
+
+languages: Javascript, Java, C#, C++, Python,
+ -->
+
+
+* **IMPORTANT** - You'll need to create 2 - 3 objects for each class and test them according to their unique Attributes. For example:

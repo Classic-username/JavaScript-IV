@@ -40,15 +40,17 @@ class Student extends Person {
     }
 
     listSubjects(){
-        return this.favSubjects
+        this.favSubjects.forEach(element => {
+           console.log(element);
+        });
     }
 
     PRAssignment(subject){
-        return `${student.name} has submitted a PR for ${subject}.`
+        return `${this.name} has submitted a PR for ${subject}.`
     }
 
     sprintChallenge(subject){
-        return `${student.name} has begun sprint challenge on ${subject}.`
+        return `${this.name} has begun sprint challenge on ${subject}.`
     }
 
 }
@@ -73,13 +75,13 @@ class PM extends Instructor {
 
 //People
 
-const mana = new Student({
+const mana = new Person({
     name: 'Mana',
     location: 'Underworld',
     age: 218,
 })
 
-const elwinn = new Student({
+const elwinn = new Person({
     name: 'Elwinn',
     location: 'Great Forest',
     age: 953,
@@ -93,7 +95,7 @@ const leroy = new Student({
     age: 25,
     previousBackground: 'College Student',
     className: 'webpt18',
-    favSubjects: ['Html', 'CSS', 'Javascript']
+    favSubjects: ['Html', 'math', 'Javascript']
 })
 
 const jenkins = new Student({
@@ -102,7 +104,7 @@ const jenkins = new Student({
     age: 32,
     previousBackground: 'Developer at Google',
     className: 'CS100',
-    favSubjects: ['Html', 'CSS', 'Javascript'],
+    favSubjects: ['Html', 'spanish', 'Javascript'],
 })
 
 const michael = new Student({
@@ -111,7 +113,7 @@ const michael = new Student({
     age: 40,
     previousBackground: 'Dairy Farmer',
     className: 'webpt17',
-    favSubjects: ['Html', 'CSS', 'Javascript'],
+    favSubjects: ['Html', 'german', 'Javascript'],
 })
 
 
@@ -157,7 +159,3 @@ const pmMichael = new PM({
     gradClassName: 'CS50',
     favInstructor: 'Jared'
 })
-
-console.log(leroy.sprintChallenge("YOU SHALL FAIL"));
-
-console.log("hello cliche");
