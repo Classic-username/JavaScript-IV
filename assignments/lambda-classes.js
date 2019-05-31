@@ -71,7 +71,22 @@ class PM extends Instructor {
 
 }
 
+//People
 
+const mana = new Student({
+    name: 'Mana',
+    location: 'Underworld',
+    age: 218,
+})
+
+const elwinn = new Student({
+    name: 'Elwinn',
+    location: 'Great Forest',
+    age: 953,
+})
+
+
+//Student
 const leroy = new Student({
     name: 'LeRoy',
     location: 'Carribean',
@@ -87,5 +102,61 @@ const jenkins = new Student({
     age: 32,
     previousBackground: 'Developer at Google',
     className: 'CS100',
-    favSubjects: ['Html', 'CSS', 'Javascript']
+    favSubjects: ['Html', 'CSS', 'Javascript'],
 })
+
+const michael = new Student({
+    name: 'Michael',
+    location: 'Hawaii',
+    age: 40,
+    previousBackground: 'Dairy Farmer',
+    className: 'webpt17',
+    favSubjects: ['Html', 'CSS', 'Javascript'],
+})
+
+
+// Instructor
+const jared = new Instructor({
+    name: 'Jared',
+    location: 'Minnesota',
+    age: 30,
+    specialty: 'redux',
+    favLanguage: 'Python',
+    catchPhrase: 'Its getting hot in here!',
+})
+
+const george = new Instructor({
+    name: 'George',
+    location: 'England',
+    age: 52,
+    specialty: 'react',
+    favLanguage: 'Javascript',
+    catchPhrase: 'TURN DOWN FOR WHAT?!?!',
+})
+
+
+// PM
+const jimmy = new PM({
+    name: 'Jimmy',
+    location: 'Washington',
+    age: 32,
+    specialty: 'front-end',
+    favLanguage: 'Java',
+    catchPhrase: 'My milkshakes bring all the boys to the yard.',
+    gradClassName: 'webpt1',
+    favInstructor: 'George'
+})
+
+const pmMichael = new PM({
+    name: 'Michael',
+    location: 'Wyoming',
+    age: 43,
+    specialty: 'react',
+    favLanguage: 'C++',
+    catchPhrase: 'How many boys are in the yard?',
+    gradClassName: 'CS50',
+    favInstructor: 'Jared'
+})
+
+console.log(leroy.sprintChallenge("YOU SHALL FAIL"));
+
